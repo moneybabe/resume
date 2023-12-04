@@ -1,0 +1,163 @@
+%-------------------------
+% Resume in Latex
+% Based off of : https://github.com/sb2nov/resume/
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\input{preamble.tex}
+\input{macros.tex}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  \textbf{{\LARGE Neo Lee}} \\
+  \href{mailto:neo.lky@berkeley.edu}{neo.lky@berkeley.edu} $\vert$
+  \href{tel:+12137130311}{(213) 713-0311} $\vert$
+  \href{github.com/moneybabe}{github.com/moneybabe}
+\end{center}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \headstart
+    \titleplacehead
+      {University of California, Berkeley}{GPA: 4.0/4.0}
+    \roletimehead
+      {Bachelor of Arts, Applied Mathematics, Computer Science}{Graduation: 2025}
+    \listitem{Cal Alumni Leadership Scholarship}
+    \vspace{5pt}
+    \itemdesc{Relevant Coursework}{
+      Data Structures and Algorithms,
+      Functional Programming,
+      Object Oriented Programming,
+      Computer Architecture,
+      Graph Theory,
+      Cryptography,
+      Discrete Mathematics,
+      Probability Theory,
+      Linear Algebra
+    }
+  \headend
+
+%-----------TECHNICAL SKILLS-----------------
+\section{Technical Skills}
+  \headstart
+  \vspace{2pt}
+    \itemdesc{Languages}{
+      Python, C++, Java, SQL, MATLAB, R, Javascript, HTML, CSS, \LaTeX
+    }
+    \vspace{3pt}
+    \itemdesc{Tools}{
+      Pytorch, Sklearn, Pandas, Numpy, Matplotlib, MySQL, Selenium, BeautifulSoup, Git, Bash, Vim, 
+      Figma
+    }
+  \headend
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \headstart
+
+    \titleplacehead
+      {UC Berkeley Department of Mathematics}{Berkeley, CA}
+      \roletimehead
+        {Undergraduate Researcher - Mechanistic Interpretability}{September 2023 - Present}
+        \itemstart
+          \listitem{
+            Reverse engineering the algorithms learned by neural network based chess engines using 
+            Pytorch.
+          }
+          \listitem{
+            Built an Alpha-beta pruning algorithm \& NN based chess engine with Python to study 
+            the effect of neural network based evaluation functions on the performance of the 
+            algorithm.
+          }
+        \itemend
+
+      \roletimehead
+        {Undergraduate Researcher - Stake-governed Random Turn Games}{August 2023 - Present}
+        \itemstart
+          \listitem{
+            Built a finite integer line tug-of-war game simulator with Python to solve for Markov 
+            perfect equilibria with dynamic programming, and visualized the results with Matplotlib.
+          }
+          \listitem{
+            Constructed a computer assisted proof for the sufficient and necessary conditions for
+            the existence of a Markov perfect equilibrium in infinite integer line tug-of-war games.
+          }
+        \itemend
+
+    \titleplacehead
+      {UC Berkeley Department of EECS}{Berkeley, CA}
+      \roletimehead{Academic Tutor - CS61A}{August 2023 - Present}
+        \itemstart
+          \listitem{
+            Tutored students in Functional Programming, Object Oriented Programming, 
+            and Dynamic Programming with Python in lab sessions.
+          }
+          \listitem{
+            Held weekly office hours to help students with homework and projects, and tutored 
+            other tutors.
+          }
+        \itemend
+  \headend
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \headstart
+    \titletimehead{Mathematical Error Analysis Library}{December 2023 - Present}
+      \itemstart
+        \listitem{
+          Inspired by Pytorch and Numpy, I am building a Python library to perform arithmetic
+          operations object-orientedly with associated error bounds factoring in floating point 
+          error.
+        }
+        \listitem{
+          Can be used in rigorous computer assisted proofs to bound the error of the results of
+          mathematical expressions.
+        }
+      \itemend
+    
+    \titletimehead{2D Tile-based World Exploration Engine}{November 2023 (2 days)}
+      \itemstart
+        \listitem{
+          Built a 2D tile-based world exploration engine with Java that generates a random world 
+          with rooms and corridors, and allows the user to explore the world with a character.
+        }
+        \listitem{
+          Implemented the A* search algorithm with Python to find the shortest path between two
+          points in the world.
+        }
+        \listitem{
+          Implemented a snake game with Java to allow the user to play the minigame in the world.
+        }
+      \itemend
+
+    \titletimehead{Trading Bot}{June 2023 - August 2023}
+      \itemstart
+        \listitem{
+          Implemented different machine learning models with Pytorch and Sklearn to predict the 
+          price of cryptocurrency, e.g. LSTM, ARIMA, Linear Regression, Random Forest, 
+          Sentiment Analysis, Transformer.
+        }
+        \listitem{
+          Built a trading bot with Python to trade cryptocurrency on Bybit using the Bybit API.
+        }
+        \listitem{
+          Implemented a backtesting framework with Python to test the performance of the trading 
+          bot.
+        }
+      \itemend
+
+    \titletimehead{Interview Questions Scraper}{April 2023}
+      \itemstart
+        \listitem{
+          Built a web scraper with Python and Selenium to scrape interview questions from 
+          Glassdoor.
+        }
+      \itemend
+  \headend
+
+\end{document}
