@@ -13,9 +13,9 @@
 %----------HEADING-----------------
 \begin{center}
   \textbf{{\LARGE Neo Lee}} \\
-  \href{mailto:neo.lky@berkeley.edu}{neo.lky@berkeley.edu} $\vert$
+  \href{mailto:neo.lky852@gmail.com}{neo.lky852@gmail.com} $\vert$
   \href{tel:+12137130311}{(213) 713-0311} $\vert$
-  \href{github.com/moneybabe}{github.com/moneybabe}
+  \href{https://github.com/moneybabe}{github.com/moneybabe}
 \end{center}
 
 
@@ -25,67 +25,75 @@
     \titleplacehead
       {University of California, Berkeley}{GPA: 4.0/4.0}
     \roletimehead
-      {Bachelor of Arts, Applied Mathematics, Computer Science}{Graduation: 2025}
+      {Bachelor of Arts, Applied Mathematics, Computer Science}{Graduation: Spring 2025}
     \vspace{2pt}
     \listitem{Cal Alumni Leadership Scholarship}
     \vspace{5pt}
     \itemdesc{Relevant Coursework}{
+      Time Series Analysis,
+      Stochastic Processes,
+      Probability Theory,
+      Linear Algebra,
+      Discrete Mathematics,
+      Graph Theory,
+      Real Analysis,
+      Numerical Analysis,
       Data Structures and Algorithms,
       Functional Programming,
       Object Oriented Programming,
-      Computer Architecture,
-      Graph Theory,
-      Cryptography,
-      Discrete Mathematics,
-      Probability Theory,
-      Linear Algebra
+      Dynamic Programming,
+      Cryptography
     }
   \headend
 
-%-----------TECHNICAL SKILLS-----------------
-\section{Technical Skills}
-  \headstart
-  \vspace{2pt}
-    \itemdesc{Languages}{
-      Python, C++, Java, SQL, MATLAB, R, Javascript, HTML, CSS, \LaTeX
-    }
-    \vspace{3pt}
-    \itemdesc{Tools}{
-      Pytorch, Sklearn, Pandas, Numpy, Matplotlib, MySQL, Selenium, BeautifulSoup, Git, Bash, Vim, 
-      Figma
-    }
-  \headend
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \headstart
 
     \titleplacehead
-      {UC Berkeley Department of Mathematics}{Berkeley, CA}
-      \roletimehead
-        {Undergraduate Researcher - Mechanistic Interpretability}{September 2023 - Present}
-        \itemstart
-          \listitem{
-            Reverse engineering the algorithms learned by neural network based chess engines using 
-            Pytorch.
-          }
-          \listitem{
-            Built an Alpha-beta pruning algorithm \& NN based chess engine with Python to study 
-            the effect of neural network based evaluation functions on the performance of the 
-            algorithm.
-          }
-        \itemend
-
+    {UC Berkeley Department of Mathematics}{Berkeley, CA}
       \roletimehead
         {Undergraduate Researcher - Stake-governed Random Turn Games}{August 2023 - Present}
         \itemstart
           \listitem{
-            Built a finite integer line tug-of-war game simulator with Python to solve for Markov 
-            perfect equilibria with dynamic programming, and visualized the results with Matplotlib.
+            Built a finite integer line tug-of-war game simulator with Python, Numpy, and Pandas to 
+            solve for Markov perfect equilibria with dynamic programming, and visualized the 
+            results with Matplotlib.
           }
           \listitem{
-            Constructed a computer assisted proof for the sufficient and necessary conditions for
-            the existence of a Markov perfect equilibrium in infinite integer line tug-of-war games.
+            Constructed a computer assisted proof for the sufficient and necessary condition for
+            the existence of a Markov perfect equilibrium in infinite integer line tug-of-war games, 
+            being that the reward ratio is bounded within a $1\times10^{-4}$ interval from a symmetric 
+            game: paper is currently under review.
+          }
+          \listitem{
+            Reduced the run-time of the computer-assisted proof by 60\% through the 
+            implementation of dynamic programming optimization techniques.
+          }
+        \itemend
+        
+      \roletimehead
+        {Undergraduate Researcher - Mechanistic Interpretability}{September 2023 - Present}
+        \itemstart
+          \listitem{
+            Reverse engineered Stockfish's efficiently updatable neural network's learned algorithm 
+            using Pytorch, Sklearn, and Seaborn, achieving MSE of 1.8 compared to a simple linear 
+            regression model with MSE of 126.
+          }
+          \listitem{
+            Applied dimension reduction techniques such as SVD, neuron pruning, and feature 
+            projection onto ReLU privileged basis to reverse engineer the embedding layer, showing 
+            that each neuron's activation space is 95\%+ correlated.
+          }
+          \listitem{
+            Aggregated 38GB training dataset with Sqlite and used Git for version 
+            control.
+          }
+          \listitem{
+            Built an Alpha-beta pruning algorithm \& NN based chess engine with Python and C++ to 
+            study the effect of neural network based evaluation functions on the performance of the 
+            algorithm.
           }
         \itemend
 
@@ -111,7 +119,7 @@
     \titletimehead{Mathematical Error Analysis Library}{December 2023 - Present}
       \itemstart
         \listitem{
-          Inspired by Pytorch and Numpy, I am building a Python library to perform arithmetic
+          Building a Numpy-like Python library to perform arithmetic
           operations object-orientedly with associated error bounds factoring in floating point 
           error.
         }
@@ -125,34 +133,30 @@
       \itemstart
         \listitem{
           Built a 2D tile-based world exploration engine with Java that generates a random world 
-          with rooms and corridors, and allows the user to explore the world with a character.
+          with rooms and corridors, which allows the user to explore the world with a character, 
+          and was showcased for class project demo with an A+.
         }
         \listitem{
-          Implemented the A* search algorithm with Python to find the shortest path between two
-          points in the world.
-        }
-        \listitem{
-          Implemented a snake game with Java to allow the user to play the minigame in the world.
+          Implemented the A* search algorithm to find the shortest path between two points in the 
+          world and a snake game.
         }
       \itemend
 
     \titletimehead{Trading Bot}{June 2023 - August 2023}
       \itemstart
         \listitem{
-          Implemented different machine learning models with Pytorch and Sklearn to predict the 
-          price of cryptocurrency, e.g. LSTM, ARIMA, Linear Regression, Random Forest, 
-          Sentiment Analysis, Transformer.
+          Implemented machine learning models with Pytorch, Sklearn, and Statsmodels for 
+          cryptocurrency price forecasting, e.g. LSTM, ARIMA, ETS Smoothing, Multi-linear Regression, 
+          Random Forest, Sentiment Analysis, Transformer.
         }
         \listitem{
-          Built a trading bot with Python to trade cryptocurrency on Bybit using the Bybit API.
-        }
-        \listitem{
-          Implemented a backtesting framework with Python to test the performance of the trading 
-          bot.
+          Built a trading bot with Python to trade cryptocurrency on Bybit using the Bybit API, 
+          achieving 2.68 Sharpe Ratio on the past 3 years of data by performing time series 
+          cross validation and leading factors engineering.
         }
       \itemend
 
-    \titletimehead{Interview Questions Scraper}{April 2023}
+    \titletimehead{Interview Questions Scraper}{April 2023 (1 hour)}
       \itemstart
         \listitem{
           Built a web scraper with Python and Selenium to scrape interview questions from 
