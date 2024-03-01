@@ -1,0 +1,169 @@
+%-------------------------
+% Resume in Latex
+% Based off of : https://github.com/sb2nov/resume/
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\input{preamble.tex}
+\input{macros.tex}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  \textbf{{\LARGE Neo Lee}} \\
+  \href{mailto:neo.lky852@gmail.com}{neo.lky852@gmail.com} $\vert$
+  \href{tel:+12137130311}{(213) 713-0311} $\vert$
+  \href{https://github.com/moneybabe}{github.com/moneybabe}
+\end{center}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \headstart
+    \titleplacehead
+      {University of California, Berkeley}{GPA: 4.0/4.0}
+    \roletimehead
+      {Bachelor of Arts, Applied Mathematics, Computer Science}{Graduation: Spring 2025}
+    \vspace{2pt}
+    \listitem{Cal Alumni Leadership Scholarship}
+    \vspace{5pt}
+    \itemdesc{Relevant Coursework}{
+      Machine Learning,
+      Optimization Theory,
+      Time Series Analysis,
+      Stochastic Processes,
+      Probability Theory,
+      Linear Algebra,
+      Discrete Mathematics,
+      Graph Theory,
+      Real Analysis,
+      Numerical Analysis,
+      Cryptography,
+      Data Structures and Algorithms,
+      Functional Programming,
+      Object Oriented Programming,
+      Dynamic Programming
+    }
+  \headend
+
+  
+%-----------TECHNICAL SKILLS-----------------
+\section{Technical Skills}
+  \headstart
+    \itemdesc{Languages}{
+      Cantonese, Mandarin, English, Python, Java, SQL, MATLAB, R, Javascript, HTML, CSS, \LaTeX
+    }
+    \itemdesc{Tools}{
+      Pytorch, Sklearn, *Boost*, Statsmodels, Pandas, Numpy, Plotly, Matplotlib, MySQL, Selenium,
+      BeautifulSoup, web3.py, Gcloud SDK, Docker, Git, Bash
+    }
+  \headend
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \headstart
+  \titleplacehead
+  {CyphaLab}{Remote}
+    \roletimehead
+      {Data Science Intern}{Januaray 2024 - Present}
+      \itemstart
+        \listitem{
+          Ensembled CodeBERT and gradient boosting decision trees using Pytorch and XGBoost to
+          classify malicious Ethereum smart contracts, achieving 0.89 F1 score on the test set.
+        }
+        \listitem{
+          Built a transaction optimizer with Python to dynamically calculate the optimal gas price
+          for Ethereum transactions and routing them through the optimal MEV relayer, reducing
+          gas fees by 30\%.
+        }
+        \listitem{
+          Built a data relayer hosted on Google Cloud Virtual Machine to provide on-chain DEX
+          transaction data for online time series forecasting.
+        }
+      \itemend
+
+
+    \titleplacehead
+    {UC Berkeley Department of Mathematics}{Berkeley, CA}
+      \roletimehead
+        {Undergraduate Researcher - Stake-governed Random Turn Games}{August 2023 - Present}
+        \itemstart
+          \listitem{
+            Built a finite integer line tug-of-war game simulator with Python, Numpy, and Pandas to 
+            solve for Markov perfect equilibria with dynamic programming, and visualized the 
+            results with Matplotlib.
+          }
+          \listitem{
+            Constructed a computer assisted proof for the sufficient and necessary condition for
+            the existence of a Markov perfect equilibrium in infinite integer line tug-of-war games, 
+            being that the reward ratio is bounded within a $1\times10^{-4}$ interval from a symmetric 
+            game: paper is currently under review.
+          }
+          \listitem{
+            Reduced the run-time of the computer-assisted proof by 60\% through the 
+            implementation of dynamic programming and vectorization techniques.
+          }
+        \itemend
+        
+      \roletimehead
+        {Undergraduate Researcher - Mechanistic Interpretability}{September 2023 - Present}
+        \itemstart
+          \listitem{
+            Reverse engineered Stockfish's efficiently updatable neural network's learned algorithm 
+            using Pytorch, Sklearn, and Seaborn, achieving MSE of 1.8 compared to a simple linear 
+            regression model with MSE of 126.
+          }
+          \listitem{
+            Applied dimension reduction techniques such as SVD, neuron pruning, and feature 
+            projection onto ReLU privileged basis to reverse engineer the embedding layer, showing 
+            that each neuron's activation space is 95\%+ correlated.
+          }
+          \listitem{
+            Aggregated 38GB training dataset with Sqlite and used Git for version 
+            control.
+          }
+          \listitem{
+            Built an Alpha-beta pruning algorithm \& NN based chess engine with Python to 
+            study the effect of neural network based evaluation functions on the performance of the 
+            algorithm.
+          }
+        \itemend
+
+    \titleplacehead
+      {UC Berkeley Department of EECS}{Berkeley, CA}
+      \roletimehead{Academic Tutor - CS61A}{August 2023 - Present}
+        \itemstart
+          \listitem{
+            Tutored students in Functional Programming, Object Oriented Programming, 
+            and Dynamic Programming with Python in lab sessions.
+          }
+          \listitem{
+            Held weekly office hours to help students with homework and projects, and tutored 
+            other tutors.
+          }
+        \itemend
+  \headend
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \headstart
+    \titletimehead{Trading Bot}{June 2023 - August 2023}
+      \itemstart
+        \listitem{
+          Implemented machine learning models with Pytorch, Statsmodels, and XGBoost for 
+          crypto price forecasting, e.g. LSTM, ARIMA, ETS Smoothing, Multi-linear Regression, 
+          GBDT, BERT.
+        }
+        \listitem{
+          Built a trading bot with Python to trade cryptocurrency on Bybit using the Bybit API,
+          achieving 2.98 Sharpe Ratio on the test set by performing time series cross validation and
+          features engineering.
+        }
+      \itemend
+  \headend
+
+\end{document}
