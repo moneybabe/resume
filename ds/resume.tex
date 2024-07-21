@@ -30,10 +30,11 @@
     \listitem{Cal Alumni Leadership Scholarship}
     \vspace{5pt}
     \itemdesc{Relevant Coursework}{
-      Machine Learning,
+      Statistical Learning,
+      Deep Learning,
       Optimization Theory,
       Time Series Analysis,
-      Stochastic Processes,
+      Stochastic Process,
       Probability Theory,
       Linear Algebra,
       Discrete Mathematics,
@@ -56,8 +57,8 @@
       Cantonese, Mandarin, English, Python, Java, SQL, MATLAB, R, Javascript, HTML, CSS, \LaTeX
     }
     \itemdesc{Tools}{
-      Pytorch, Sklearn, *Boost*, Statsmodels, Pandas, Numpy, Plotly, Matplotlib, MySQL, Selenium,
-      BeautifulSoup, web3.py, Gcloud SDK, Docker, Git, Bash
+      Pytorch, Sklearn, *Boost*, Statsmodels, Pandas, Numpy, Seaborn, Plotly, Matplotlib, MySQL,
+      Selenium, BeautifulSoup, Web3.py, Gcloud SDK, Docker, Git, Bash
     }
   \headend
 
@@ -68,7 +69,32 @@
   \titleplacehead
   {CyphaLab}{Remote}
     \roletimehead
-      {Data Science Intern}{Januaray 2024 - Present}
+      {Portfolio Manager}{April 2024 - Present}
+      \itemstart
+        \listitem{
+          Spearheaded the development and optimization of the proprietary algorithmic trading
+          portfolio for the company's cryptocurrency fund of \$500,000.
+        }
+        \listitem{
+          Engineered and implemented a comprehensive suite of CTA strategies utilizing machine
+          learning models such as LSTM, ARIMA, GBDT with Pytorch, Statsmodels, and XGBoost for
+          effective reinvestment of corporate capital.
+        }
+        \listitem{
+          Leveraged sophisticated optimization methodologies, including mean-variance, Calmar ratio,
+          Kelly criterion, and expected shortfall, to enhance portfolio performance.
+        }
+        \listitem{
+          Applied elastic regularization and principal component analysis (PCA) for dimensionality
+          reduction, ensuring model robustness and mitigating overfitting.
+        }
+        \listitem{
+          Achieved an annual Sharpe ratio of 4.49 and an annual Calmar ratio of 15.8 since
+          inception.
+        }
+      \itemend
+    \roletimehead
+      {Data Scientist}{Januaray 2024 - April 2024}
       \itemstart
         \listitem{
           Ensembled CodeBERT and gradient boosting decision trees using Pytorch and XGBoost to
@@ -97,24 +123,30 @@
             results with Matplotlib.
           }
           \listitem{
-            Constructed a computer assisted proof for the sufficient and necessary condition for
-            the existence of a Markov perfect equilibrium in infinite integer line tug-of-war games, 
-            being that the reward ratio is bounded within a $1\times10^{-4}$ interval from a symmetric 
-            game: paper is currently under review.
+            Constructed a computer assisted proof utilizing interval arithmetic for the sufficient
+            and necessary condition for the existence of a Markov perfect equilibrium in infinite
+            integer line tug-of-war games, being that the reward ratio is bounded within a
+            $1\times10^{-4}$ interval from a symmetric game: paper is currently under review.
           }
           \listitem{
-            Reduced the run-time of the computer-assisted proof by 60\% through the 
-            implementation of dynamic programming and vectorization techniques.
+            Reduced the run-time of the computer-assisted proof by from 3 hours to 20 minutes
+            through the implementation of dynamic programming and vectorization techniques.
           }
         \itemend
         
-      \roletimehead
+        \roletimehead
         {Undergraduate Researcher - Mechanistic Interpretability}{September 2023 - Present}
         \itemstart
           \listitem{
             Reverse engineered Stockfish's efficiently updatable neural network's learned algorithm 
             using Pytorch, Sklearn, and Seaborn, achieving MSE of 1.8 compared to a simple linear 
             regression model with MSE of 126.
+          }
+          \listitem{
+            Applied feature visualization techniques such as activation maximization, gradient
+            ascent, and occlusion sensitivity to interpret the learned algorithm, showing that the
+            neural network has learned to evaluate chess positions based on piece mobility and 
+            piece value.
           }
           \listitem{
             Applied dimension reduction techniques such as SVD, neuron pruning, and feature 
@@ -125,45 +157,72 @@
             Aggregated 38GB training dataset with Sqlite and used Git for version 
             control.
           }
-          \listitem{
-            Built an Alpha-beta pruning algorithm \& NN based chess engine with Python to 
-            study the effect of neural network based evaluation functions on the performance of the 
-            algorithm.
-          }
         \itemend
 
-    \titleplacehead
-      {UC Berkeley Department of EECS}{Berkeley, CA}
-      \roletimehead{Academic Tutor - CS61A}{August 2023 - Present}
-        \itemstart
-          \listitem{
-            Tutored students in Functional Programming, Object Oriented Programming, 
-            and Dynamic Programming with Python in lab sessions.
-          }
-          \listitem{
-            Held weekly office hours to help students with homework and projects, and tutored 
-            other tutors.
-          }
-        \itemend
-  \headend
 
-
-%-----------PROJECTS-----------------
-\section{Projects}
-  \headstart
-    \titletimehead{Trading Bot}{June 2023 - August 2023}
+  \titleplacehead
+  {Kook Surf Inc.}{San Diego, CA}
+    \roletimehead
+      {Founder}{December 2021 - August 2022}
       \itemstart
         \listitem{
-          Implemented machine learning models with Pytorch, Statsmodels, and XGBoost for 
-          crypto price forecasting, e.g. LSTM, ARIMA, ETS Smoothing, Multi-linear Regression, 
-          GBDT, BERT.
+          Founded an IoT surfboard rentals company using automated rental stations powered by
+          Arduino and NFC.
         }
         \listitem{
-          Built a trading bot with Python to trade cryptocurrency on Bybit using the Bybit API,
-          achieving 2.98 Sharpe Ratio on the test set by performing time series cross validation and
-          features engineering.
+          Co-developed the mobile app for the company using React Native and Flask.
+        }
+        \listitem{
+          Developed and tested the embedded system for the rental stations, ensuring reliability and
+          security of the transactions.
+        }
+        \listitem{
+          Successfully sold the company after validating the market demand by generating over \$10,000
+          revenue.
         }
       \itemend
+
+
+  \titleplacehead
+  {VotingDAO (votingdao.io)}{Remote}
+    \roletimehead
+      {Co-Founder}{December 2021 - March 2022}
+      \itemstart
+        \listitem{
+          Founded and led VotingDAO, a decentralized organization that aims to empower the
+          blockchain community through fair and transparent voting mechanisms.
+        }
+        \listitem{
+          Organized the Blockchain Person Of The Year 2021 Election on Ethereum, Polygon and BNB
+          Chain, attracting over 15,000 participants and generating significant media attention and
+          social impact.
+        }
+        \listitem{
+          Partnered with and endorsed by industry leaders such as BAYC, Animoca Brands, Polygon DAO,
+          Consensys, etc., establishing strong relationships and collaborations within the
+          blockchain ecosystem.
+        }
+      \itemend
+
   \headend
+
+
+% -----------PROJECTS-----------------
+% \section{Projects}
+%   \headstart
+%     \titletimehead{Trading Bot}{June 2023 - August 2023}
+%       \itemstart
+%         \listitem{
+%           Implemented machine learning models with Pytorch, Statsmodels, and XGBoost for 
+%           crypto price forecasting, e.g. LSTM, ARIMA, ETS Smoothing, Multi-linear Regression, 
+%           GBDT, BERT.
+%         }
+%         \listitem{
+%           Built a trading bot with Python to trade cryptocurrency on Bybit using the Bybit API,
+%           achieving 2.98 Sharpe Ratio on the test set by performing time series cross validation and
+%           features engineering.
+%         }
+%       \itemend
+%   \headend
 
 \end{document}
