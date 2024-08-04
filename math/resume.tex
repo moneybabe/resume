@@ -29,22 +29,31 @@
     \vspace{2pt}
     \listitem{Cal Alumni Leadership Scholarship}
     \vspace{5pt}
-    \itemdesc{Relevant Coursework}{
+    \itemdesc{Mathematics Coursework}{
       Real Analysis,
+      Complex Analysis,
+      Topology,
+      Algebra,
       Linear Algebra,
       Probability Theory,
       Stochastic Processes,
+      Mathematical Statistics,
+      Time Series Analysis,
       Graph Theory,
-      Optimization Theory,
-      Cryptography,
       Numerical Analysis,
       Discrete Mathematics,
+      Cryptography
+    }
+    \itemdesc{Computer Science Coursework}{
+      Optimization Theory,
       Machine Learning,
-      Time Series Analysis,
-      Data Structures and Algorithms,
+      Deep Learning,
+      Efficient Algorithms,
       Functional Programming,
       Object Oriented Programming,
-      Dynamic Programming
+      Dynamic Programming,
+      Data Structures,
+      Computer Architecture
     }
   \headend
 
@@ -52,6 +61,51 @@
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \headstart
+  \titleplacehead
+  {CyphaLab}{Remote}
+    \roletimehead
+      {Portfolio Manager}{April 2024 - Present}
+      \itemstart
+        \listitem{
+          Spearheaded the development and optimization of the proprietary algorithmic trading
+          portfolio for the company's cryptocurrency fund of \$500,000.
+        }
+        \listitem{
+          Engineered and implemented a comprehensive suite of CTA strategies utilizing machine
+          learning models such as LSTM, ARIMA, GBDT with Pytorch, Statsmodels, and XGBoost for
+          effective reinvestment of corporate capital.
+        }
+        \listitem{
+          Leveraged sophisticated optimization methodologies, including mean-variance, Calmar ratio,
+          Kelly criterion, and expected shortfall, to enhance portfolio performance.
+        }
+        \listitem{
+          Applied elastic regularization and principal component analysis (PCA) for dimensionality
+          reduction, ensuring model robustness and mitigating overfitting.
+        }
+        \listitem{
+          Achieved an annual Sharpe ratio of 3.49 and an annual Calmar ratio of 13.8 since
+          inception.
+        }
+      \itemend
+    \roletimehead
+      {Data Scientist}{Januaray 2024 - April 2024}
+      \itemstart
+        \listitem{
+          Ensembled CodeBERT and gradient boosting decision trees using Pytorch and XGBoost to
+          classify malicious Ethereum smart contracts, achieving 0.89 F1 score on the test set.
+        }
+        \listitem{
+          Built a transaction optimizer with Python to dynamically calculate the optimal gas price
+          for Ethereum transactions and routing them through the optimal MEV relayer, reducing
+          gas fees by 30\%.
+        }
+        \listitem{
+          Built a data relayer hosted on Google Cloud Virtual Machine to provide on-chain DEX
+          transaction data for online time series forecasting.
+        }
+      \itemend
+      
 
     \titleplacehead
     {UC Berkeley Department of Mathematics}{Berkeley, CA}
@@ -59,9 +113,9 @@
         {Undergraduate Researcher - Stake-governed Random Turn Games}{August 2023 - Present}
         \itemstart
           \listitem{
-            Built a finite integer line tug-of-war game simulator with \textbf{Python, Numpy, and Pandas} to 
+            Built a finite integer line tug-of-war game simulator with Python, Numpy, and Pandas to 
             solve for Markov perfect equilibria with dynamic programming, and visualized the 
-            results with \textbf{Matplotlib}.
+            results with Matplotlib.
           }
           \listitem{
             Constructed a computer assisted proof for the sufficient and necessary condition for
@@ -70,17 +124,17 @@
             game: paper is currently under review.
           }
           \listitem{
-            Reduced the run-time of the computer-assisted proof by 60\% through the 
-            implementation of dynamic programming optimization techniques.
+            Reduced the run-time of the computer-assisted proof by from 3 hours to 20 minutes
+            through the implementation of dynamic programming and vectorization techniques.
           }
         \itemend
         
       \roletimehead
-        {Undergraduate Researcher - Mechanistic Interpretability}{September 2023 - Present}
+        {Undergraduate Researcher - Mechanistic Interpretability}{September 2023 - December 2023}
         \itemstart
           \listitem{
             Reverse engineered Stockfish's efficiently updatable neural network's learned algorithm 
-            using \textbf{Pytorch, Sklearn, and Seaborn}, achieving MSE of 1.8 compared to a simple linear 
+            using Pytorch, Sklearn, and Seaborn, achieving MSE of 1.8 compared to a simple linear 
             regression model with MSE of 126.
           }
           \listitem{
@@ -93,15 +147,16 @@
             control.
           }
           \listitem{
-            Built an Alpha-beta pruning algorithm \& NN based chess engine with \textbf{C++} to 
+            Built an Alpha-beta pruning algorithm \& NN based chess engine with C++ to 
             study the effect of neural network based evaluation functions on the performance of the 
             algorithm.
           }
         \itemend
+      \vspace{5pt}
 
     \titleplacehead
       {UC Berkeley Department of EECS}{Berkeley, CA}
-      \roletimehead{Academic Tutor - CS61A}{August 2023 - Present}
+      \roletimehead{Academic Tutor - CS61A}{August 2023 - December 2023}
         \itemstart
           \listitem{
             Tutored students in Functional Programming, Object Oriented Programming, 
@@ -112,59 +167,77 @@
             other tutors.
           }
         \itemend
+
+    \titleplacehead
+      {HKUST School of Engineering}{Remote, CA}
+      \roletimehead{Undergraduate Researcher - Machine Learning}{March 2023 - July 2023}
+        \itemstart
+          \listitem{
+            Scraped and cleaned online data on the US economy and stock market using Python,
+            BeautifulSoup, Selenium and Pandas, and stored mass data with MySQL.
+          }
+          \listitem{
+            Analyzed economic indicators such as CPI and interest rate with regression and
+            clustering using Numpy and Scikit-learn.
+          }
+          \listitem{
+            Surveyed and summarized academic papers on state-of-the-art machine learning topics such
+            as diffusion models for generative AI.
+          }
+        \itemend
   \headend
 
 
 %-----------PROJECTS-----------------
-\section{Projects}
-  \headstart
-    \titletimehead{Mathematical Error Analysis Library}{December 2023 - Present}
-      \itemstart
-        \listitem{
-          Building a Numpy-like Python library to perform arithmetic
-          operations object-orientedly with associated error bounds factoring in floating point 
-          error.
-        }
-        \listitem{
-          Can be used in rigorous computer assisted proofs to bound the error of the results of
-          mathematical expressions.
-        }
-      \itemend
+% \section{Projects}
+%   \headstart
+%     \titletimehead{Mathematical Error Analysis Library}{December 2023 - Present}
+%       \itemstart
+%         \listitem{
+%           Building a Numpy-like Python library to perform arithmetic
+%           operations object-orientedly with associated error bounds factoring in floating point 
+%           error.
+%         }
+%         \listitem{
+%           Can be used in rigorous computer assisted proofs to bound the error of the results of
+%           mathematical expressions.
+%         }
+%       \itemend
     
-    \titletimehead{2D Tile-based World Exploration Engine}{November 2023 (2 days)}
-      \itemstart
-        \listitem{
-          Built a 2D tile-based world exploration engine with \textbf{Java} that generates a random world 
-          with rooms and corridors, which allows the user to explore the world with a character, 
-          and was showcased for class project demo with an A+.
-        }
-        \listitem{
-          Implemented the A* search algorithm to find the shortest path between two points in the 
-          world and a snake game.
-        }
-      \itemend
+%     \titletimehead{2D Tile-based World Exploration Engine}{November 2023 (2 days)}
+%       \itemstart
+%         \listitem{
+%           Built a 2D tile-based world exploration engine with \textbf{Java} that generates a random world 
+%           with rooms and corridors, which allows the user to explore the world with a character, 
+%           and was showcased for class project demo with an A+.
+%         }
+%         \listitem{
+%           Implemented the A* search algorithm to find the shortest path between two points in the 
+%           world and a snake game.
+%         }
+%       \itemend
 
-    \titletimehead{Trading Bot}{June 2023 - August 2023}
-      \itemstart
-        \listitem{
-          Implemented machine learning models with \textbf{Pytorch, Statsmodels, and XGBoost} for 
-          crypto price forecasting, e.g. LSTM, ARIMA, ETS Smoothing, Multi-linear Regression, 
-          GBRF, Sentiment Analysis, Transformer.
-        }
-        \listitem{
-          Built a trading bot with Python to trade cryptocurrency on Bybit using the Bybit API, 
-          achieving 1.98 Sharpe Ratio on the past 3 years of data by performing time series 
-          cross validation and features engineering.
-        }
-      \itemend
+%     \titletimehead{Trading Bot}{June 2023 - August 2023}
+%       \itemstart
+%         \listitem{
+%           Implemented machine learning models with \textbf{Pytorch, Statsmodels, and XGBoost} for 
+%           crypto price forecasting, e.g. LSTM, ARIMA, ETS Smoothing, Multi-linear Regression, 
+%           GBRF, Sentiment Analysis, Transformer.
+%         }
+%         \listitem{
+%           Built a trading bot with Python to trade cryptocurrency on Bybit using the Bybit API, 
+%           achieving 1.98 Sharpe Ratio on the past 3 years of data by performing time series 
+%           cross validation and features engineering.
+%         }
+%       \itemend
 
-    \titletimehead{Interview Questions Scraper}{April 2023 (1 hour)}
-      \itemstart
-        \listitem{
-          Built a web scraper with \textbf{Selenium} to scrape interview questions from 
-          Glassdoor.
-        }
-      \itemend
-  \headend
+%     \titletimehead{Interview Questions Scraper}{April 2023 (1 hour)}
+%       \itemstart
+%         \listitem{
+%           Built a web scraper with \textbf{Selenium} to scrape interview questions from 
+%           Glassdoor.
+%         }
+%       \itemend
+%   \headend
 
 \end{document}
