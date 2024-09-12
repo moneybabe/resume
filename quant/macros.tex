@@ -1,0 +1,38 @@
+\newcommand{\listitem}[1]{
+  \item \small #1
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+}
+
+\newcommand{\titleplacehead}[2]{
+  \item\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2}
+    \end{tabular*}
+}
+
+\newcommand{\roletimehead}[2]{
+    \item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & \textit{#2} \\
+    \end{tabular*}
+}
+
+\newcommand{\titletimehead}[2]{
+    \item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{#2} \\
+    \end{tabular*}
+}
+
+\newcommand{\itemdesc}[2]{\item\small\textbf{#1:}{#2}}
+
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\headstart}{\begin{itemize}[leftmargin=0in, label={}, itemsep=-5pt]}
+\newcommand{\headend}{\end{itemize}}
+\newcommand{\itemstart}{\vspace{-8pt}\begin{itemize}[rightmargin=0.2in, itemsep=-1pt]}
+\newcommand{\itemend}{\end{itemize}}

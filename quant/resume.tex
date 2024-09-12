@@ -1,0 +1,180 @@
+%-------------------------
+% Resume in Latex
+% Based off of : https://github.com/sb2nov/resume/
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\input{preamble.tex}
+\input{macros.tex}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  \textbf{{\LARGE Neo Lee}} \\
+  \href{mailto:neo.lky852@gmail.com}{neo.lky852@gmail.com} $\vert$
+  \href{tel:+12137130311}{(213) 713-0311} $\vert$
+  \href{https://github.com/moneybabe}{github.com/moneybabe}
+\end{center}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \headstart
+    \titleplacehead
+      {University of California, Berkeley}{GPA: 4.0/4.0}
+    \roletimehead
+      {Bachelor of Arts, Applied Mathematics, Computer Science}{Graduation: Spring 2026}
+    \vspace{2pt}
+    \listitem{Cal Alumni Leadership Scholarship}
+    \vspace{5pt}
+    \itemdesc{Relevant Coursework}{
+      Machine Learning,
+      Deep Learning,
+      Optimization Theory,
+      Time Series Analysis,
+      Stochastic Process,
+      Probability Theory,
+      Linear Algebra,
+      Discrete Mathematics,
+      Graph Theory,
+      Real Analysis,
+      Numerical Analysis,
+      Cryptography,
+      Data Structures and Algorithms,
+      Functional Programming,
+      Object Oriented Programming,
+      Dynamic Programming
+    }
+  \headend
+
+  
+%-----------TECHNICAL SKILLS-----------------
+\section{Technical Skills}
+  \headstart
+    \itemdesc{Languages}{
+      Cantonese, Mandarin, English, Python, Java, SQL, MATLAB, R, Javascript, HTML, CSS, \LaTeX
+    }
+    \itemdesc{Tools}{
+      Pytorch, Sklearn, *Boost*, Statsmodels, Pandas, Numpy, Seaborn, Plotly, Matplotlib, MySQL,
+      Selenium, BeautifulSoup, Web3.py, Gcloud SDK, Docker, Git, Bash, Notion
+    }
+  \headend
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \headstart
+  \titleplacehead
+  {CyphaLab}{Hong Kong / Remote}
+    \roletimehead
+      {Trading Intern}{April 2024 - Present}
+      \itemstart
+        \listitem{
+          Assisted the development of the algorithmic trading division with a proprietary fund of
+          \$500,000.
+        }
+        \listitem{
+          Implemented a comprehensive suite of market neutral strategies utilizing machine learning
+          models such as LSTM, ARIMA, GBDT with Pytorch, Statsmodels, and XGBoost, achieving an
+          annual Sharpe ratio of 3.49 and an annual Calmar ratio of 7.2 in forward testing.
+        }
+        \listitem{
+          Leveraged optimization methodologies, including mean-variance, Calmar ratio, Kelly
+          criterion, and expected shortfall, to enhance portfolio performance.
+        }
+        \listitem{
+          Developed an internal order tracking system with Python accompanied by a dashboard with
+          Plotly to monitor the performance of the trading strategies across multiple exchanges
+          in real time.
+        }
+        \listitem{
+          Adopted Gitflow workflow for version control across the team.
+        }
+      \itemend
+
+
+    \titleplacehead
+    {UC Berkeley Department of Mathematics}{Berkeley, CA}
+      \roletimehead
+        {Undergraduate Researcher - Stake-governed Random Turn Games}{August 2023 - Present}
+        \itemstart
+          \listitem{
+            Built a finite integer line tug-of-war game simulator with Python, Numpy, and Pandas to 
+            solve for Markov perfect equilibria with dynamic programming, and visualized the 
+            results with Matplotlib.
+          }
+          \listitem{
+            Constructed a computer assisted proof utilizing interval arithmetic for the sufficient
+            and necessary condition for the existence of a Markov perfect equilibrium in infinite
+            integer line tug-of-war games, being that the reward ratio is bounded within a
+            $1\times10^{-4}$ interval from a symmetric game: paper is currently under review.
+          }
+          \listitem{
+            Reduced the run-time of the computer-assisted proof by from 3 hours to 20 minutes
+            through the implementation of dynamic programming and vectorization techniques.
+          }
+        \itemend
+        
+        \roletimehead
+        {Undergraduate Researcher - Mechanistic Interpretability}{September 2023 - Present}
+        \itemstart
+          \listitem{
+            Reverse engineered Stockfish's efficiently updatable neural network's learned algorithm 
+            using Pytorch, Sklearn, and Seaborn, achieving MSE of 1.8 compared to a simple linear 
+            regression model with MSE of 126.
+          }
+          \listitem{
+            Applied feature visualization techniques such as activation maximization, gradient
+            ascent, and occlusion sensitivity to interpret the learned algorithm, showing that the
+            neural network has learned to evaluate chess positions based on piece mobility and 
+            piece value.
+          }
+          \listitem{
+            Applied dimension reduction techniques such as SVD, neuron pruning, and feature 
+            projection onto ReLU privileged basis to reverse engineer the embedding layer, showing 
+            that each neuron's activation space is 95\%+ correlated.
+          }
+          \listitem{
+            Aggregated 38GB training dataset with Sqlite and used Git for version 
+            control.
+          }
+        \itemend
+
+  \titleplacehead
+  {UC Berkeley Department of EECS}{Berkeley, CA}
+  \roletimehead{Academic Tutor - CS61A}{August 2023 - December 2023}
+    \itemstart
+      \listitem{
+        Tutored students in Functional Programming, Object Oriented Programming, 
+        and Dynamic Programming with Python in lab sessions.
+      }
+      \listitem{
+        Held weekly office hours to help students with homework and projects, and tutored 
+        other tutors.
+      }
+    \itemend
+
+  \headend
+
+
+% -----------PROJECTS-----------------
+% \section{Projects}
+%   \headstart
+%     \titletimehead{Trading Bot}{June 2023 - August 2023}
+%       \itemstart
+%         \listitem{
+%           Implemented machine learning models with Pytorch, Statsmodels, and XGBoost for 
+%           crypto price forecasting, e.g. LSTM, ARIMA, ETS Smoothing, Multi-linear Regression, 
+%           GBDT, BERT.
+%         }
+%         \listitem{
+%           Built a trading bot with Python to trade cryptocurrency on Bybit using the Bybit API,
+%           achieving 2.98 Sharpe Ratio on the test set by performing time series cross validation and
+%           features engineering.
+%         }
+%       \itemend
+%   \headend
+
+\end{document}
